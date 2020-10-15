@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container"> 
+<form class="form-signin" method="POST" action="/login">
+    <p>  
+      <p style ="font-size:40px; color:white;font-family:courier;"> <ui></ui><ui></ui>Welcome!&#9996;</p>
+    <p>
+        <button class="btn btn-light btn-outline-dark" onclick="document.location = '/create_account'">Let's begin! </button>
+    </p>
+</form>
+<button  class="btn btn-info" onclick="document.location = '/splash'"> Splash Page </button> 
+
+<style>
+  body {
+    background-image: url('https://www.pngitem.com/pimgs/m/88-882029_teacher-computer-icons-education-lecturer-free-commercial-professor.png');
+    background-size: 75% 440%;
+  }
+</style>
+
+</div>
+       
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<p style="font-size:40px; color:red;font-family:courier;text-align:center;">Welcome to the Splash Page</p>
+
+    <h6> This is an online appointment system for students and tutors to schedule/approve/cancel tutoring sessions with ease through a calendar and a chat box feature. </h6>
+    <h6> These main features will help eliminate communication problems and save time for tutors and students. </h6>
+
+    <br>
+
+    <p> &#10145;Via home page you can visit the login page or the splash document by clicking on the buttons "log in!" and "Splash Page"</p>
+    <img src= "/static/pics/home.png" alt ="home page" width="500" height="300">
+    <br> </br>
+    <h6>&#10145;After you have clicked the Log in button, it will direct you to the login page, in this page you can enter in your password and username. Once you are done
+    just press the button "Sign in " </h6>
+    <img src= "/static/pics/login.png" alt ="login" class="center" width="800" height="500" >
+
+    <h6>&#10145; Suppose you dont have an account with us, you can click the 'create a new account option' on the login page and it will redirect you to that page.  </h6>
+    <img src= "/static/pics/createAccount.png" alt ="createAccount.png" class="center" width="800" height="500">
+
+    <h6>&#10145; If you have created your account, it will redirect you to the login page, once you have logged in you can view the meetings page! In this page,it lists out your meetings.  </h6>
+    <br> </br>
+    <img src= "/static/pics/meetings.png" alt ="meetings.png" class="center" width="800" height="500">
+    <br> </br>
+    <h6>&#10145; On the navigation bar, if you click on the tab "logout", you will be logged out. If you click on the splash tab, you will be able to view the splash document.
+        <br> </br>
+        <img src= "/static/pics/navigation.png" alt ="navigation.png" class="center" width="800" height="500">
+    <br> </br>
+    <h6>&#10145; Guest can view a creator availability by going to their creator page, e.g. 127.0.0.1/kart </h6>
+    <br> </br>
+    <img src= "/static/pics/creators.png" alt ="creators.png" class="center" width="800" height="500">
+
+    <br> </br>
+    <h6>&#10145; Guest can create appointments by going to a creator page. </h6>
+    <br> </br>
+    <img src= "/static/pics/appointments.png" alt ="appointments.png" class="center" width="800" height="500">
+    <br> </br>
+    <h6>&#10145; The settings page will allow the creater to set availability, meeting length, set email preference, and delete your account.</h6>
+    <br> </br>
+    <img src= "/static/pics/settings.png" alt ="settings.png" class="center" width="800" height="500">
+    <br> </br>
+    <h6>&#10145; In the settings page, when you press delete account, it will delete your account and direct you to this page. </h6>
+    <br> </br>
+    <img src= "/static/pics/delete.png" alt ="delete.png" class="center" width="800" height="500"> 
+    <br> </br>
+    <h6>&#10145; In the settings page, when you press the button or email verifcation, it will  direct you to this page. </h6>
+    <br> </br>
+    <img src= "/static/pics/email.png" alt ="email.png" class="center" width="800" height="500"> 
+
+
+
+    <p>To go back to the login page, click the button : 
+    <button class="btn btn-outline-danger btn-sm" onclick="document.location = '/login'"> Login </button> </br> </p>
+     If you have already logged into your account click the button below to go back to home login:
+    <button class="btn btn-outline-danger btn-sm" onclick="document.location = '/Home-Login'"> Home login  </button>
+
+{% endblock %}

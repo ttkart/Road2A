@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    * {box-sizing: border-box;}
+    ul {list-style-type: none;}
+    body {font-family: Verdana, sans-serif;}
+    
+    .month {
+      padding: 30px 25px;
+      width: 100%;
+      background:darkblue;
+      text-align: center;
+    }
+    
+    .month ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .month ul li {
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .month .prev {
+      float: left;
+      padding-top: 10px;
+    }
+    
+    .month .next {
+      float: right;
+      padding-top: 10px;
+    }
+    
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color:black
+    }
+    
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color:white;
+      text-align: center;
+    }
+    
+    .days {
+      padding: 10px 0;
+      background:linen;
+      margin: 0;
+    }
+    
+    .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size:16px;
+      color: #777;
+    }
+    
+    .days li .passive {
+      padding: 5px;
+      background:black;
+      color: white !important
+    }
+
+    a:link{
+        color:black;
+    }
+
+    a:visited{
+        color:cornflowerblue;
+    }
+
+    a:hover{
+        background-color:darkblue;
+    }
+
+    a:active{
+        color:chartreuse;
+    }
+    
+    /* Add media queries for smaller screens */
+    @media screen and (max-width:720px) {
+      .weekdays li, .days li {width: 13.1%;}
+    }
+    
+    @media screen and (max-width: 420px) {
+      .weekdays li, .days li {width: 12.5%;}
+      .days li .active {padding: 2px;}
+    }
+    
+    @media screen and (max-width: 290px) {
+      .weekdays li, .days li {width: 12.2%;}
+    }
+
+    button {
+        text-align: center;
+        margin-left: 550px;
+    }
+</style>
+
+<h4 class="page-header"> &#9999; {{ name }}'s Page </h4>
+<h5> &#10004; Availability: {{ availability }}</h5>
+<h5> &#10004; Time Length: {{ time }}</h5>
+
+<div class="month">      
+    <ul>
+      <li>
+        
+        <span style="font-size:18px">May 2020</span>
+      </li>
+    </ul>
+  </div>
+  
+  <ul class="weekdays">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
+  
+  <ul class="days">  
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li><a href= "/{{name}}/appointments/1">1</a></li>
+    <li><a href = "/{{name}}/appointments/2">2</a></li>
+    <li><a href = "/{{name}}/appointments/3">3</a></li>
+    <li><a href = "/{{name}}/appointments/4">4</a></li>
+    <li><a href = "/{{name}}/appointments/5">5</a></li>
+    <li><a href = "/{{name}}/appointments/6">6</a></li>
+    <li><a href = "/{{name}}/appointments/7">7</a></li>
+    <li><a href = "/{{name}}/appointments/8">8</a></li>
+    <li><a href = "/{{name}}/appointments/9">9</a></li>
+    <li><a href = "/{{name}}/appointments/10">10</a></li>
+    <li><a href = "/{{name}}/appointments/11">11</a></li>
+    <li><a href = "/{{name}}/appointments/12">12</a></li>
+    <li><a href = "/{{name}}/appointments/13">13</a></li>
+    <li><a href = "/{{name}}/appointments/14">14</a></li>
+    <li><a href = "/{{name}}/appointments/15">15</a></li>
+    <li><a href = "/{{name}}/appointments/16">16</a></li>
+    <li><a href = "/{{name}}/appointments/17">17</a></li>
+    <li><a href = "/{{name}}/appointments/18">18</a></li>
+    <li><a href = "/{{name}}/appointments/19">19</a></li>
+    <li><a href = "/{{name}}/appointments/20">20</a></li>
+    <li><a href = "/{{name}}/appointments/21">21</a></li>
+    <li><a href = "/{{name}}/appointments/22">22</a></li>
+    <li><a href = "/{{name}}/appointments/23">23</a></li>
+    <li><a href = "/{{name}}/appointments/24">24</a></li>
+    <li><a href = "/{{name}}/appointments/25">25</a></li>
+    <li><a href = "/{{name}}/appointments/26">26</a></li>
+    <li><a href = "/{{name}}/appointments/27">27</a></li>
+    <li><a href = "/{{name}}/appointments/28">28</a></li>
+    <li><a href = "/{{name}}/appointments/29">29</a></li>
+    <li><a href = "/{{name}}/appointments/30">30</a></li>
+    <li><a href = "/{{name}}/appointments/31">31</a></li>
+  </ul>
+
+  <button class="btn btn-primary" type="submit" onclick="document.location = '/'"> Return to Home</button>
+{% endblock %}

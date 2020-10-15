@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container"> 
+
+    <h2> Settings: </h2>
+   
+    <form class="form-signin" method="POST" action="/settings">
+          <p> 1. Choose your time slot: </p>
+      
+          {{ form.hidden_tag() }}
+            {{ form.time_Range.label }}: <br>
+            {{ form.time_Range(size=32)}} <br>
+            <br>
+            {{ form.meeting_Length.label }}: <br>
+            {{ form.meeting_Length(size=32)}} <br>
+
+          <br>
+          <button class="btn btn-success" type="submit"> Save </button>
+          <br><br>
+      </form>
+
+    <p>
+      2. Do you want an email confirmation of your selected appointment&#10067;
+    </br></br>
+        <button  class="btn btn-info" onclick="document.location = '/emailConfirm'"> Send Emails </button> 
+  </br>
+        <p>
+          3. Do you want to delete your account&#10067; </p>
+        <button class="btn btn-outline-danger btn-sm" onclick="document.location = '/DeleteAccount'"> Delete Account </button>
+        <br> </br> <p>4. Done&#10067;</p>
+        <button  class="btn btn-info" onclick="document.location = '/Home-Login'"> Return to Home </button> 
+    </p>
+
+</div>
+{% endblock %}

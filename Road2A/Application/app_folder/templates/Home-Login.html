@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</head>
+
+
+<body class ='bg-light'>
+  <nav aria-label="breadcrumb">
+    <nav class="navbar navbar-light bg-light"></nav>
+    
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="/settings">Settings</a></li>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a></li>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/splash">Splash</a></li>
+  </li>
+</ul>
+</div>
+<div class="card-body">
+  <h2 class="page-header">Welcome, {{name}}! </h2>
+<h6> Your Availability: {{ time_Range }} </br>
+   Your Meeting Length: {{ meeting_Length }} minutes</h6>
+</div>
+</div>
+</ul>
+
+</body>
+
+<head>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+     
+      border:1px solid black;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color:white  }
+
+    td {
+      padding: 30px 25px;
+      background:
+      text-align: center
+    }
+    th {
+      padding: 30px 25px;
+      background:lightgrey;
+      text-align: center
+    }
+  
+    </style>
+    </head>
+    <body>
+      <table>
+        <tr>
+          <th> Name: </th>
+          <th>Email: &#128214;</th>
+          <th>Time:  &#128338;</th>
+        </tr>
+        <tr>  
+          {% for student in appts %} 
+            {% for info in student %}
+            <td> {{ info }} </td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+    </body>
+
+{% endblock %}

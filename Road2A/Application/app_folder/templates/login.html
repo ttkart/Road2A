@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+<div class="container"> 
+<form class="form-signin" method="POST" action="/login">
+
+
+
+  <p style ="font-size:40px; color:black;font-family:courier;">Login:&#9997;</p>
+  
+    {{ form.hidden_tag() }}
+      {{ form.username.label }} : <br>
+      {{ form.username(size=32)}} <br>
+
+      {{ form.password.label }}: <br>
+      {{ form.password(size=32)}} <br>
+
+      <style>
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: black;
+          padding: 5px 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 12px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+    <br></nr>
+    <button class="btn btn-success" type="submit">Sign in &#10004; </button>
+   
+    <p> 
+      <br> </br>
+      New User&#10067;
+    </br>
+      <button class="btn btn-secondary btn-sm" onclick="document.location = '/create_account'">Register</button>
+
+    </p>
+
+    
+   
+</form>
+</div>
+{% endblock %}

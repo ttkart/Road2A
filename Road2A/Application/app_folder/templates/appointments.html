@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3> Sign Up For A Session with {{ name }}!</h3> 
+
+<h5>  May {{ date }}, 2020</h5>
+
+<form class="form-signin" method="POST" action = "/{{name}}/appointments/{{date}}/Confirmation">
+    
+    {{ form.hidden_tag() }}
+
+    <p>
+        {{  form.name.label }}: <br>
+        {{  form.name(size=32)}}
+    </p>
+
+    <p>
+        {{  form.email.label }} :<br>
+        {{  form.email(size=32)}}
+    </p>
+
+    <p>
+        {{  form.time.label }}: <br>
+        {{  form.time(size=32)}}
+    </p>
+
+    <button class="btn btn-success" type="submit">Sign Up for the Session!</button>
+
+</form>
+{% endblock %}

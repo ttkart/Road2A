@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Functions &#8212; Road2A+  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="How to install my app" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-app_folder.models">
+<span id="functions"></span><h1>Functions<a class="headerlink" href="#module-app_folder.models" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="app_folder.models.User">
+<em class="property">class </em><code class="sig-prename descclassname">app_folder.models.</code><code class="sig-name descname">User</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.models.User" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the ID, username, email, and password_hash variables for each user.</p>
+<dl class="py attribute">
+<dt id="app_folder.models.User.email">
+<code class="sig-name descname">email</code><a class="headerlink" href="#app_folder.models.User.email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app_folder.models.User.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#app_folder.models.User.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app_folder.models.User.password_hash">
+<code class="sig-name descname">password_hash</code><a class="headerlink" href="#app_folder.models.User.password_hash" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="app_folder.models.User.set_password">
+<code class="sig-name descname">set_password</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">password</span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.models.User.set_password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="app_folder.models.User.username">
+<code class="sig-name descname">username</code><a class="headerlink" href="#app_folder.models.User.username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="app_folder.models.load_user">
+<code class="sig-prename descclassname">app_folder.models.</code><code class="sig-name descname">load_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.models.load_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes in a user ID and returns that user’s data.</p>
+</dd></dl>
+
+<span class="target" id="module-app_folder.routes"></span><dl class="py function">
+<dt id="app_folder.routes.Home">
+<code class="sig-prename descclassname">app_folder.routes.</code><code class="sig-name descname">Home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.routes.Home" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the home page, “Home-Login.html”, with the current user</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app_folder.routes.hello">
+<code class="sig-prename descclassname">app_folder.routes.</code><code class="sig-name descname">hello</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.routes.hello" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the general home page, “Home.html”</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app_folder.routes.login">
+<code class="sig-prename descclassname">app_folder.routes.</code><code class="sig-name descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.routes.login" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the login page, “login.html”, using “LoginForm()”</p>
+<p>Check cross checks credential with database when user enter a username and password.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app_folder.routes.logout">
+<code class="sig-prename descclassname">app_folder.routes.</code><code class="sig-name descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.routes.logout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs the current user out and redirects to the general home page, “Home.html”</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="app_folder.routes.reg">
+<code class="sig-prename descclassname">app_folder.routes.</code><code class="sig-name descname">reg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app_folder.routes.reg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the account creation page, “CreateAccount.html”</p>
+<p>When a new user enters their data the data is saved and pushed to the database.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Road2A+</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">How to install my app</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Functions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">How to install my app</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Ryan Biesty, Cameron Lau, Karthika Thiruvallur.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/function.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

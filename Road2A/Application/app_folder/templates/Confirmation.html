@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Session Created with {{ name }} on May {{ date }} at {{ time }}!</h1>
+
+<style>
+    button {
+        text-align: center;
+        position: center;
+    }
+    
+</style>
+
+<button class="btn btn-primary " type="submit" onclick="document.location = '/{{name}}'">Sign Up for More!</button>
+<button class="btn btn-secondary " type="submit" onclick="document.location = '/'">Return to Home</button>
+{% endblock %}
