@@ -4,7 +4,7 @@
  | Application Images:         |  Use Case Diagram:  |
 :-------------------------:|:-------------------------:
 ![](app_3.png)  |  ![](use_4.png)
-![](use_5.png)
+![](use_5.png)  |  ![](use_7.png)
 
 
 ## Problem Statement:
@@ -26,10 +26,3 @@ Create an appointment system for students and tutors to schedule/approve/cancel 
 * The website must be maintained every 6 months with updated features (ex: graphics, fixed bugs).
 * Students and tutors must be able to recover their login info (serviceability).
 * The website must be available to Students and Tutors 90% of the time (reliability). 
-
-## Use Cases:
-* Students sign up for new account.
-* Students login or logout.
-* Students sign up for appointment.
-* Student cancels appointment.
-* Tutor approving their current requested appointments.
