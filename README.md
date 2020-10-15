@@ -1,4 +1,10 @@
-# Road2A
+
+## Problem Statement: 
+Students and tutors may encounter communication difficulties when signing up or canceling sessions.
+
+## Product Objective:
+Create an appointment system for students and tutors to schedule/approve/cancel tutoring appointments with ease through calendar and chat box features. These main features will help eliminate communication problems and save time for tutors and students.
+
 
 
  | Application Images:         |  Use Case Diagram:  |
@@ -6,12 +12,6 @@
 ![](app_3.png)  |  ![](use_4.png)
 ![](use_5.png)  |  ![](use_7.png)
 
-
-## Problem Statement:
-Students and tutors may encounter communication difficulties when signing up or canceling sessions.
-
-## Product Objective:
-Create an appointment system for students and tutors to schedule/approve/cancel tutoring appointments with ease through calendar and chat box features. These main features will help eliminate communication problems and save time for tutors and students.
 
 ## Functional Requirements:
 * Students should be able to sign up for at least 1 session per week.
